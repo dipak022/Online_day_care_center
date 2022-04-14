@@ -1,0 +1,80 @@
+@extends('backend.master')
+@section('title')
+Add category
+@endsection
+@section('content')
+<div class="ms-content-wrapper">
+      <div class="row">
+        <div class="col-md-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb pl-0">
+              <li class="breadcrumb-item"><a href="{{route('home')}}"><i class="material-icons">home</i> Home</a>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Category</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Create Category</li>
+            </ol>
+            <div class="d-flax">
+                <a href="#" class="btn btn-success float-right">All Category</a>
+            </div>
+          </nav>
+        </div>
+        <div class="col-xl-3"></div>
+        <div class="col-xl-6 col-md-12">
+          <div class="ms-panel ms-panel-fh">
+            <div class="ms-panel-header">
+              <h6 style="text-align:center;"> Create Category</h6>
+            </div>
+            <div class="ms-panel-body">
+              <form class="needs-validation clearfix" novalidate>
+                <div class="form-row">
+                  <div class="col-xl-12 col-md-12 mb-3">
+                    <label for="validationCustom10">Category Name</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationCustom10" placeholder="Full Name" required>
+                      <div class="invalid-feedback">
+                        Please provide category name
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 col-md-12 mb-3">
+                    <label for="validationCustom10">Order Number</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationCustom10" placeholder="Full Name" required>
+                      <div class="invalid-feedback">
+                        Please provide order number
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-md-12">
+                    <label for="validationCustom11">Email Address</label>
+                    <div class="input-group">
+                      <input type="email" class="form-control" id="validationCustom11" placeholder="Email Address" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid email.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="validationCustom12">Message</label>
+                    <div class="input-group">
+                      <textarea rows="5" id="validationCustom12" class="form-control" placeholder="Message" required></textarea>
+                      <div class="invalid-feedback">
+                        Please provide a message.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary float-right" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+       
+
+    
+  
+      </div>
+    </div>
+@endsection
